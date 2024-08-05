@@ -1,0 +1,48 @@
+/* SELETOR UNIVERSAL *:
+ para o css onde o que for feito nele será aplicado em tudo */
+*{
+    font-family:monospace;
+}
+/*SELETOR DE TEXTO h1, h2, h3...*/
+h1{
+    color:green;
+    border: 1px solid green;
+}
+/*SELETOR DE CLASSE: é chamado atravez do simbolo . */
+.verde{
+    color: green;
+    border: 1px solid green;
+}
+/*ao utilizar o seletor de classe dessa forma ele só poderá ser utilizado em parágrafos mesmo que seja chamado em outra tag*/
+p.verde{
+    color:green;
+}
+/*SELETOR DE ID: é chamado atravez do simbolo # */
+#cabecalho{
+    padding: 10px;
+    margin: 10px;
+    background-color: #dc1717;
+    text-align: center;
+}
+/*SELETOR DE FILHO: seleciona um elemento que é filho direto de outro:
+ele vai selecionar qualquer link <a> que seja filho direto de um elemento de lista <li>*/
+li>a{
+    text-decoration: none;
+    color: orange;
+}
+/* SELETOR DE DESCENDENTE: seleciona todos elementos específicados que sejam descendentes de outro elemento
+no exemplo ele seleciona todos os links <a> que sejam descendentes de <p> independente se são filhos diretos ou não*/
+p a{
+    color: blue;
+}
+/*SELETOR DE IRMÃO ADJACENTE: seleciona o elemento que é irmão (que está abaixo) de outro mas não os outros
+no exemplo ele seleciona o primeiro elemento <p> que está abaixo de <h2> mas não os outros
+se existir outro elemento abaixo de <h2> que não seja irmão o elemnto <p> não será selecionado*/
+h2+p{
+    color: yellow;
+}
+/*SELETOR DE IRMÃO GERAL: seleciona todos elementos que sejam irmãos gerais de outro elemento selecionado
+se outro elemento estiver sendo irmão geral de <h3> o elemento escolhido não será irmão*/
+h3~p{
+    color:aqua;
+}

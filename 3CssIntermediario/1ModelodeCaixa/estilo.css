@@ -1,0 +1,23 @@
+.conteudo{
+    
+    border: 1px solid red;
+    /* primeira forma de aplicar o padding
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    */
+    /* segunda forma onde é colocado apenas os tamanho e funciona em sentido horário
+    padding: 20px 15px 10px 5px;
+    */
+    /* nesta forma é aplicado primeiro em e baixo e por ultimo na esquerda e direita
+    padding: 20px 10px;
+    */
+    /*margin funciona igual o padding porém com a parte externa do bloco*/
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:20px;
+    margin-bottom: 20px;
+
+    width: 150px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<!--div é usada para dividir o conteúdo e aplicar formatações de forma mais precisa-->
+<!--a div usa o formato de bloco ou seja com conteúdos um abaixo do outro enquanto o span formara o local específico em que ele
+ está e todos os conteúdos dos spans são inline ou seja eles ficam um ao lado do outro-->
+<head>
+    <meta charset="UTF-8">
+    <title>Div e tag</title>
+
+    <style type="text/css">
+        #topo{
+            background: red;
+        }
+        #conteudo{
+            background: yellow;
+        }
+        #rodape{
+            background: black;
+            color: yellow;
+        }
+        #assinatura{
+            background: red;
+        }
+        .produto{
+            background:gray;
+            margin: 10px;
+        }
+        .azul{
+            color:blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="topo">
+
+        <img width="200" src="https://images1.autocasion.com/actualidad/wp-content/uploads/2015/12/Qu%C3%A9-significa-el-Logo-de-Ferrari-.jpg">
+        <li>
+            <ul>Home</ul>
+            <ul>Produtos</ul>
+            <ul>Contatos</ul>
+        </li>
+
+    </div>
+
+    <div id="conteudo">
+
+        <div class="produto">
+            Produto 1
+        </div>
+        <div class="produto">
+            Produto 2
+        </div>
+        <div class="produto">
+            Produto 3
+        </div>
+
+    </div>
+
+    <div id="rodape">
+        Todos os <span class="azul">direitos reservados</span>
+    </div>
+
+    <span id="assinatura">
+        Ferrari
+    </span>
+    
+    <span>
+        lamborguini
+    </span>
+
+</body>
+</html>

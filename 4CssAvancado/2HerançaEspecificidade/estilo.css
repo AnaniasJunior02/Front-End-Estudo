@@ -1,0 +1,30 @@
+/*ao aplicar a formatação no body todos os elementos herdarão sua formatação
+o corretor é utilizar o body para formatações mais genéricas e formatar de forma específica dentro das tags internas
+no caso do border e background não são herdados pelos outros elementos a não ser que se use o seletor geral * */
+body{
+    color: red;
+    border: 1px solid red;
+    background: gray;
+}
+/*no caso de dois seletores iguais o ultimo será aplicado
+exite uma excessão o atributo !important que consegue sobrescrever essa regra, mas por regra o important é usado em apenas ultimos casos
+*/
+p{
+    color: blue;
+}
+p{
+    color: red !important;
+}
+/*os seletores mais especificos serão aplicados a frente das regras gerais
+os de classe ficarão a frente dos seletores especificos e os de id a frente dos de classe*/
+h2{
+    color: blue;
+    background-color: red;
+}
+h2.amarelo{
+    background-color: yellow;
+    text-align: right;
+}
+h2#centro{
+    text-align: center;
+}

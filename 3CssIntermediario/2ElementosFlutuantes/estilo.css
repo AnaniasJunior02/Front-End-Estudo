@@ -1,0 +1,44 @@
+/*
+o float sobrepõe outros blocos até o momento em que os outros blocos se tornam flutuantes e se por acaso os blocos em float
+estiverem abaixo do bloco não flutuante eles não irão sobrepor, apenas ficarão abaixo.
+
+se um bloco estiver maior que o outro ele empurrará os outros blocos para o lado*/
+.conteudo0{
+    color: black;
+    background: yellow;
+    border:1px solid gray;
+    width: 600px;
+    height: 300px;
+    float: none;
+}
+.conteudo1{
+    color:beige;
+    background: red;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin:10px;
+
+}
+.conteudo2{
+    color:beige;
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin:10px;
+    
+    
+}
+.conteudo3{
+    color:beige;
+    background: green;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    float:left;
+    margin:10px;
+    
+}

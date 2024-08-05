@@ -1,0 +1,49 @@
+/*
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 10px 20px;
+    background: url(../3BarradeNavegacaoVertical/Imagens/seta.png) no-repeat left center;
+}
+a{
+    text-decoration: none;
+}
+*/
+/*no caso vamos pegar uma imagem com tamanho de 400px e definir o tamanho a largura do link para 200px e mover a imagem para esquerda
+ficando amarela, então após isso, usaremos a formatação do link a:hover para fazer a imagem se mover para a direita ficando laranja
+ao mover o mouse por cima*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul a{
+    width:200px;
+    height: 40px;
+    display: block;/*links não são elementos de blocos*/
+    border: 1px solid red;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px; /*essa formatação define o tamanho da linha do texto diferente do font-size que define o tamanho da fonte*/
+    background: #f7b600 url(../3BarradeNavegacaoVertical/Imagens/menu.png) no-repeat left bottom; /*mesmo com a imagem, o correto é colocar uma cor para caso a imagem não carregue*/
+}
+a:hover, .selecionado a{
+    background-position: right bottom;
+    background-color:#f99200; /*mesma situação para caso a imagem não carregue*/
+    color: #fff;
+}
+/*usar a formatação desta forma faz com que a opção da pagina assim que entra fique marcada e com a formatação feita dessa forma
+o próprio css ira selecionar a edição para a página correta*/
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a
+#contato #navegacao .contato a{
+    background-position: right bottom;
+    background-color:#f99200; /*mesma situação para caso a imagem não carregue*/
+    color: #fff;
+}

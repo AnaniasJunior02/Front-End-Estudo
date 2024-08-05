@@ -1,0 +1,24 @@
+a{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/*está é a formatação para links que não foram visitados e é possível formatar unindo ambos*/
+a:Link, a:visited{
+    color: #c94141;
+}
+/*está é a formatação para links que forma visitados*/
+a:visited{
+    color: #c0c0c0;
+}
+/*essa é a formatação ao passar o cursor sobre o link*/
+a:hover{
+    color: #FFF;
+    background: #6d790f;
+}
+/*essa é a formatação para links ativos ou seja para links que estão sendo clicados*/
+a:active{
+    color: #e4f371;
+}
+
+/*é importante manter essa ordem de formatações para links*/

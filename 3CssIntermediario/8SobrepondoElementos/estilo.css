@@ -1,0 +1,29 @@
+/*o z-index é usado para definir qualconteúdo vai a frente e qual fica atrás, quanto maior o número mais a frente ele ficará*/
+.conteudo1{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+.conteudo2{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 0;
+}
+.conteudo3{
+    border: 1px solid red;
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 1;
+}

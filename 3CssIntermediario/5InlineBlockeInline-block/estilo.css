@@ -1,0 +1,8 @@
+.borda{
+    border: 1px solid red;
+}
+.bordai{
+    border: 1px solid red;
+    display:inline-block;
+}
+/*é possivel transformar o tipo de elemento usando o display*/

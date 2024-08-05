@@ -1,0 +1,19 @@
+/*ao usar elementos flutuantes em uma div que não é flutuante pode ser que algumas formatações não funcionem como o caso do background 
+verde, para faze-lo funcionar é preciso limpar a formatação usando o clear e chamala index, isso acontece pois o que está empurrando 
+a div principal é o texto e como não temos a div principal não expande*/
+#principal{
+    border: 1px solid red;
+    background: green;
+}
+.conteudo{
+    color:beige;
+    background: blue;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin:10px;
+}
+ .clear{
+    clear: both;
+ }

@@ -1,0 +1,30 @@
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+table{
+    width: 600px;
+    border-collapse:separate /*collapse faz a borda ficar colada enquanto a separate faz ela ter um espaço entre elas*/;
+}
+th, td{
+    padding: 7px;
+
+}
+th{
+    text-transform: uppercase; /*para deixar as letras maiúsculas*/     
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em; /*para adicionar espaçamento entre as letras*/
+}
+
+tr.alternado{/*as linhas terão cores alternadas*/
+    background-color: #efefef;
+}
+tr:hover{/*quando o usuario passar o mouse a linha mudará de cor*/
+    background-color: #c3e6e5
+}
+.numero{
+    text-align: right;
+
+}

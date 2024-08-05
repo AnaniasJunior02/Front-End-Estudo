@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tabela</title>
+    </head>
+
+    <body>
+
+        <!--o tr significa table row ou seja linha da tabela-->
+        <!--o td significa table data ou seja são os dados da tabela o numero de td dentro do tr defina a quantidade de colunas-->
+        <!--o th siginifica table header e é o cabeçalho da tabela-->
+        <!--é possível adicionar imgens a tabela além de mudar formataçaõ de sua largura-->
+        <!--colspan significa extenção de coluna e com ele dá para definir quantas colunas a linha vai ocupar-->
+        <!--rowspan significa extenção da linha e serve para definir quantas linhas uma coluna vai ocupar-->
+        <h2>Produtos</h2>
+        <table border="2" width="50%">
+
+            <tr>
+
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+
+            </tr>
+
+            <tr>
+
+                <td>01</td>
+                <td>Espada</td>
+                <td>3000</td>
+
+            </tr>
+
+            <tr>
+
+                <td>02</td>
+                <td><a href="https://www.magazineluiza.com.br/smartphone-samsung-galaxy-s23-ultra-256gb-preto-5g-12gb-ram-68-cam-quadrupla-selfie-12mp/p/232855300/te/s23u/">Celular</a></td>
+                <td>8000</td>
+
+            </tr>
+
+            <tr>
+
+                <td>03</td>
+                <td>
+                    <img src="Imagens/OIP.jpeg" width="200">
+                </td>
+                <td>3.000.000</td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="2">Desconto</td>
+                <td colspan="2">cupom 1 - 10 reais</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">cupom 1 - 10 reais</td>
+            </tr>
+
+            <tr>
+                <td>Total</td>
+                <td colspan="2">R$ 8000</td>
+            </tr>
+
+
+
+        </table>
+
+    </body>
+
+</html>
