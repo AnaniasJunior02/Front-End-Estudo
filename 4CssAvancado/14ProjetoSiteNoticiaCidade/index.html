@@ -1,94 +1,143 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Noticias Cidade - Seu site de notícias</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="estilo.css">
-    </head>
-    <body id="home">
-        <div id="container">
-            <div id="topo">
-                <h1 class="logo">Notícias Cidade</h1>
-                <ul id="navegacao">
-                    <li><a class="primeiro" href="index.html">Home</a></li>
-                    <li><a class="brasil" href="brasil.html">Brasil</a></li>
-                    <li><a class="internacional" href="internacional.html">Internacional</a></li>
-                    <li><a class="economia" href="economia.html">Economia</a></li>
-                    <li><a class="saude" href="saude.html">Saúde</a></li>
-                    <li><a class="ciencias" href="ciencias.html">Ciências</a></li>
-                    <li><a class="fotos" href="fotos.html">Fotos</a></li>
-                </ul>
-            </div>
-            <div id="conteudo">
-                <!--começo principal-->
-                <div id="primario">
-                    <div class="caixa destaque">
-                        <h2>Destaque</h2>
-                        <div class="caixa-conteudo">
-                            <h3>Nova Legislação</h3>
-                            <img class="imagem-principal" src="../Imagens/taxi.jpg" width="100%">    
-                            <p>
-                                fvgrekjngreguioghugrehgurehguior
-                                ehgiuhegeriugreh
-                            </p>
-                            <a>Leia mais!</a>
-                        </div>
-                    </div>
-                </div>
-                <!--fim principal-->
-                <div id="secundario">
-                    <div class="caixa entrevista">
-                        <h2>Última Entrevista</h2>
-                        <div class="caixa-conteudo">
-                            <h3>ENTREVISTA COM FELIPE SILVA</h3>
-                            <img class="imagem-principal" src="../Imagens/doutor.jpg" width="100%">    
-                            <p>
-                                fvgrekjngreguioghugrehgurehguior
-                                ehgiuhegeriugreh
-                            </p>
-                            <a>Leia mais!</a>
-                        </div>
-                    </div>
-                </div>
-                <!--começo lateral-->
-                <div id="lateral">
-                    <div class="caixa">
-                        <h2>Entrevistas</h2>
-                        <div class="caixa-conteudo">
-                            <ul>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                                <li><a href="">José Almeida</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="caixa">
-                        <h2>News</h2>
-                        <div class="caixa-conteudo">
-                            <form>
-                                <div>
-                                    <label>E-mail:</label>
-                                    <input type="tex" name="email" id="email" placeholder="E-mail">
-                                </div>
-                                <div>
-                                    <input type="submit" value="Cadastrar" class="submit">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!--fim lateral-->
-            </div>
+
+<head>
+    <title>Noticias Cidade - Seu site de notícias</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body id="home">
+    <div id="container">
+        <div id="topo">
+            <h1 class="logo">Notícias Cidade</h1>
+            <ul id="navegacao">
+                <li><a class="primeiro" href="index.html">Home</a></li>
+                <li><a class="brasil" href="brasil.html">Brasil</a></li>
+                <li><a class="internacional" href="internacional.html">Internacional</a></li>
+                <li><a class="economia" href="economia.html">Economia</a></li>
+                <li><a class="saude" href="saude.html">Saúde</a></li>
+                <li><a class="ciencias" href="ciencias.html">Ciências</a></li>
+                <li><a class="fotos" href="fotos.html">Fotos</a></li>
+            </ul>
         </div>
-        <div id="container-rodape" style="clear:both;">
-            <div id="rodape">
-                &copy;<!--para exibir o simbolo de copyeight--> Copyright 2000-2018 Notícias Cidade
+        <div id="conteudo">
+            <!--começo principal-->
+            <div id="primario">
+                <div class="caixa destaque"><!--agora posso usar a classe destaque e caixa-->
+                    <h2>Destaque</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Nova Legislação</h3>
+                        <img class="imagem-principal" src="../Imagens/taxi.jpg" width="100%">
+                        <p>
+                            fvgrekjngreguioghugrehgurehguior
+                            ehgiuhegeriugreh
+                        </p>
+                        <a>Leia mais!</a>
+                    </div>
+                </div>
+                <div class="caixa destaque"><!--agora posso usar a classe destaque e caixa-->
+                    <h2>Mundo</h2>
+                    <div class="caixa-conteudo">
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href="">
+                                    <img src="../Imagens/tecnologia.jpg" width="80">
+                                    <h3>Novas Tecnologias</h3>
+                                    <p>xzregreggthgrtehgtrh
+                                        gyugyyuggugyuugyu...
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../Imagens/tecnologia.jpg" width="80">
+                                    <h3>Novas Tecnologias</h3>
+                                    <p>xzregreggthgrtehgtrh
+                                        gyugyyuggugyuugyu...
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../Imagens/tecnologia.jpg" width="80">
+                                    <h3>Novas Tecnologias</h3>
+                                    <p>xzregreggthgrtehgtrh
+                                        gyugyyuggugyuugyu...
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../Imagens/tecnologia.jpg" width="80">
+                                    <h3>Novas Tecnologias</h3>
+                                    <p>xzregreggthgrtehgtrh
+                                        gyugyyuggugyuugyu...
+                                    </p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <!--fim principal-->
+            <!--Começo secindário-->
+            <div id="secundario">
+                <div class="caixa entrevista">
+                    <h2>Última Entrevista</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Entervista com Felipe Silva</h3>
+                        <img class="imagem-principal" src="../Imagens/doutor.jpg" width="100%">
+                        <p>
+                            fvgrekjngreguioghugrehgurehguior
+                            ehgiuhegeriugreh
+                        </p>
+                        <a>Leia mais!</a>
+                    </div>
+                </div>
+            </div>
+            <!--fim secundário-->
+            <!--começo lateral-->
+            <div id="lateral">
+                <div class="caixa">
+                    <h2>Entrevistas</h2>
+                    <div class="caixa-conteudo">
+                        <ul>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">José Almeida</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <h2>News</h2>
+                    <div class="caixa-conteudo">
+                        <form>
+                            <div>
+                                <label>E-mail:</label>
+                                <input type="tex" name="email" id="email" placeholder="E-mail">
+                            </div>
+                            <div>
+                                <input type="submit" value="Cadastrar" class="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--fim lateral-->
         </div>
-    </body>
+    </div>
+    <div id="container-rodape" style="clear:both;">
+        <div id="rodape">
+            &copy;<!--para exibir o simbolo de copyeight--> Copyright 2000-2018 Notícias Cidade
+        </div>
+    </div>
+</body>
+
 </html>
