@@ -1,0 +1,17 @@
+@font-face{
+    font-family: BringHeart; /*o recomendado é caso tenha mais de uma palavra usar aspas*/
+    src: url(../fontes/BringHeart.woff);
+}
+@font-face{
+    font-family: "Ancient-Medium";
+    src: url(../fontes/Ancient-Medium.woff);
+}
+
+h1{
+    font-size: 6em;
+    font-family: BringHeart;
+}
+h2{
+    font-size: 3em;
+    font-family: "Ancient-Medium";
+}
