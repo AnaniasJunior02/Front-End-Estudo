@@ -1,0 +1,71 @@
+/*Inicio Comfigurações Padões*/
+body,html{
+    margin: 0;
+    font: 16px "LATO", sans-serif;
+    color:#777;
+    height: 100%; /*assim o body vai se espandir e ocupar a tela inteira*/
+}
+
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+/*FIM Comfigurações Padões*/
+
+/*INICIO efeito parallax*/
+
+.caixa1, .caixa2, .caixa3, .caixa4{
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover; /*para aparecer em telas maiores, o recomendado é ter a imagem do mesmo tamanho*/
+    background-position: center;
+    background-attachment: fixed; /*faz a imagem ficar fixa*/
+}
+
+.caixa1{
+    background-image: url(../Imagens/imagem1.jpg);
+}
+
+.caixa2{
+    background-image: url(../Imagens/imagem2.jpg);
+}
+
+.caixa3{
+    background-image: url(../Imagens/imagem3.jpg);
+}
+
+.caixa4{
+    background-image: url(../Imagens/imagem4.jpg);
+}
+
+.conteudo-titulo{
+    position: absolute;
+    left: 0; /*a parte esquerda está cenmtralizada*/
+    top: 45%; /*a parte de cima está centralizada*/
+    text-align: center; /*assim o texto sempre estará centralizado*/
+    width: 100%;
+}
+
+.conteudo-titulo span.titulo{
+    color: #fff;
+    background-color: #111;
+    padding:18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+/*FIM efeito parallax*/
