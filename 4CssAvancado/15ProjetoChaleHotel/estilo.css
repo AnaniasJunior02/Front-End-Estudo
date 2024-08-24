@@ -10,7 +10,7 @@ body{
 }
 
 #container{
-    background: #ede9cc;
+    background: #ede9cc url(../Imagens/bg-container.png) top center repeat-y;
     margin: 0 auto;
     min-width: 740px; /*para que a tela não reduzi de forma absurda*/
     max-width: 1200px; /*para que a tela não fique muito grande e interfira nos textos*/
@@ -83,6 +83,7 @@ a.reserva{
     background: #a29850;
     padding: 5px 10px;
     float: right;
+    color: #fff;
 }
 /*fim cabeçalho
 ********************************************************************************************************************/
@@ -123,14 +124,15 @@ ul#navegacao a:hover{
 /*inicio area principal*/
 
 #area-principal{
-    background: red;
     float: left;
     width: 50%; /*ambas areas terão metade do espaço*/
+    background: url(../Imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
 }
 
 .conteudo{
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
 }
 
 /*fim area principal
@@ -139,10 +141,66 @@ ul#navegacao a:hover{
 /*inicio area lateral*/
 
 #area-lateral{
-    background: blue;
     float: right;
     width: 50%; /*ambas areas terão metade do espaço*/
+    background: url(../Imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;
+}
+
+#beneficios li{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+#beneficios li a img{
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficios li a h3{
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../Imagens/ornamento.png) no-repeat center right;
+
+}
+
+#beneficios li a p{
+    font-size: 0.8em;
+    color: #000000;
+}
+
+#beneficios li:hover{
+    background: #f6f3d6;
+    cursor: pointer;
 }
 
 /*fim area lateral
+********************************************************************************************************************/
+
+/*inicio rodapé*/
+#rodape{
+    clear: both;
+    padding: 16px;
+    background: #fff url(../Imagens/bg-rodape.png) repeat-x top;
+    color:#7d7640;
+}
+
+/*fim rodapé
+********************************************************************************************************************/
+/*formatações de textos*/
+
+h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding:5px 0px;
+}
+
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*formatações de textos
 ********************************************************************************************************************/
