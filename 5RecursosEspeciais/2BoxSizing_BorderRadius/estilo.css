@@ -1,0 +1,59 @@
+#caixa{
+    width: 300px;
+    height:300px;
+    margin: 10px;
+    padding:10px;
+    background: #b9c941;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px; /*a imagem ficará totalmente redonda*/
+}
+
+#caixa2{
+    width: 300px;
+    height:300px;
+    margin: 10px;
+    padding:10px;
+    background: #b9c941;
+
+    /* Algumas versões dos navegadores não possuem suporte total a propriedade. sendo preciso utilizar o prefixo 
+    -webkit(google chrome desde a versão 4.0 e safari desde a versão 3.2) e o prefixo -moz-(mozila firefox desde a versão 2.0).
+    A melhor prática é colocar a propriedade sem o prefixo após as versões com prefixo */
+
+    -webkit-border-radius: 20px 90px; /*a partir da versão 10.0 do google chrome e 5.1 do safari não é mais necessário*/
+    -moz-border-radius: 20px 90px; /*a partir da versão 29.0 do mozila firefox não é mais necessário*/
+    border-radius: 20px 90px; /* será formatado a parte superior esquerda e inferior direita com 20px e o restante com 90px */
+    
+}
+
+#caixa3{
+    width: 300px;
+    height:300px;
+    margin: 10px;
+    padding:10px;
+    background: #b9c941;
+    -webkit-border-radius: 20px 50px 90px;
+    -moz-border-radius: 20px 50px 90px;
+    border-radius: 20px 50px 90px; /*as bordas serão formatadas em sentido horário*/
+
+}
+
+.arredondamento{
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px; /*a imagem se tornou arredondada*/
+
+}
+
+/*a caixa possui 300px, porém ao colocar um padding de 50px ela se espande e fica maior aumentando por exemplo a largura em 100px
+por ser 50px para cada lado*/
+#caixa4{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /*dessa forma o padding não irá aumentar o tamanho da caixa.
+    navegadores em versões antigas não possuem suporte ao box-sizing, portanto é necessário usar prefixos*/
+}
