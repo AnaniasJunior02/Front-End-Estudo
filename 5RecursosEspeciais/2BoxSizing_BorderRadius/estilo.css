@@ -42,6 +42,7 @@
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
     border-radius: 150px; /*a imagem se tornou arredondada*/
+    margin:10px;
 
 }
 
@@ -50,6 +51,7 @@ por ser 50px para cada lado*/
 #caixa4{
     width: 300px;
     height: 300px;
+    margin: 10px;
     background: #b9c941;
     padding: 50px;
     -webkit-box-sizing: border-box;

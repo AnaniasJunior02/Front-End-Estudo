@@ -1,0 +1,71 @@
+#link{
+    margin:10px;
+    background: #d0cfcf;
+}
+
+#link a{
+    text-decoration:none;
+    color: #fff;
+}
+#link button{
+    
+    background-color: gray;
+    border: double red;
+}
+
+h1{
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#caixa1, #caixa2, #caixa3, #caixa4, #caixa5{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:10px;
+    margin:10px;
+}
+
+/*inicio definindo opacidade*/
+
+#caixa1{
+    width: 300px;
+    height: 300px;
+    background: url(../Imagens/camera.png);
+}
+
+#caixa1 h1{
+    background: rgba(165, 10, 10, 0.5);
+}
+/* fim definindo opacidade*/
+
+/*inicio definindo gradient*/
+
+#caixa2{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(blue, red, green, yellow);/*é possível colocar mais de duas cores*/
+    float: left;
+}
+
+#caixa3{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right, blue, red); /*é possível mudar a direção do gradient usando to "direção"*/
+    float: left;
+}
+
+#caixa4{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(190deg, blue, red); /*é possível definir em graus a rotação*/
+    float: left;
+}
+
+#caixa5{
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(blue, red); /*radial-gradient tem o mesmo efeito em formato circular*/
+    float: left;
+}
+/*Na documentação da W3 Schoools é possível olhar mais formatações de gradient*/
