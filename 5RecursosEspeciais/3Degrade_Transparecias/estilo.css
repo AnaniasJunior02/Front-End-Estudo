@@ -1,21 +1,20 @@
 #link{
     margin:10px;
     background: #d0cfcf;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #link a{
     text-decoration:none;
     color: #fff;
+    text-transform: uppercase;
 }
 #link button{
     
     background-color: gray;
     border: double red;
-}
-
-h1{
-    color:#fff;
-    text-transform: uppercase;
+    box-shadow: 7px 7px 10px 0 #000;
 }
 
 #caixa1, #caixa2, #caixa3, #caixa4, #caixa5{

@@ -1,3 +1,22 @@
+#link{
+    margin:10px;
+    background: #d0cfcf;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#link a{
+    text-decoration:none;
+    color: #fff;
+    text-transform: uppercase;
+}
+#link button{
+    
+    background-color: gray;
+    border: double red;
+    box-shadow: 7px 7px 10px 0 #000;
+}
+
 #caixa{
     width: 300px;
     height:300px;

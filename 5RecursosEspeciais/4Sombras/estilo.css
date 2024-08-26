@@ -1,0 +1,42 @@
+#link{
+    margin:10px;
+    background: #d0cfcf;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#link a{
+    text-decoration:none;
+    color: #fff;
+    text-transform: uppercase;
+}
+#link button{
+    
+    background-color: gray;
+    border: double red;
+    box-shadow: 7px 7px 10px 0 #000;
+}
+
+#caixa h1{
+    color: #fff;
+    text-shadow: 20px -10px 5px #000;
+    /*text-shadow coloca sombras em textos como um efeito de fundo.
+     Seu primeiro parâmetro move a sombra na horizontal enquanto o segundo na vertical
+     O terceiro valor aplica um blur(borrado) na sombra*/
+}
+
+#caixa p{
+    color: #fff;
+    text-shadow: 20px -10px rgba(20, 20, 20, 0.5); /*é possível usar rgba e colocar opacidade*/
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow: 20px 300px 3px 40px #000; 
+    /*Existe a mesma propriedade para caixas
+    o quarto valor define o espaçamento da sombra*/
+}
