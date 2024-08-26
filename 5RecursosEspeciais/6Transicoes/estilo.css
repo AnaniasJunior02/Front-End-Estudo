@@ -1,0 +1,37 @@
+#link{
+    margin:10px;
+    background: #d0cfcf;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#link a{
+    text-decoration:none;
+    color: #fff;
+    text-transform: uppercase;
+}
+#link button{
+    
+    background-color: gray;
+    border: double red;
+    box-shadow: 7px 7px 10px 0 #000;
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+
+#caixa:hover{
+    width: 500px;
+    background: yellow;
+    -webkit-transition: width 3s, background 3s;
+    -moz-transition: width 3s, background 3s;
+    -o-transition: width 3s, background 3s;
+    transition: width 3s, background 3s;
+    /*ao colocar o mouse em cima da caixa ela ira mudar e com a propriedade transition haverá uma animação
+    também é posivel colocar as propriedades dentro de transition e definir seus valores
+    é possível também definir as propriedades de uma vez usando all*/
+    transition: all 3s;
+}
