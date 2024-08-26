@@ -1,0 +1,80 @@
+#link{
+    margin:10px;
+    background: #d0cfcf;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#link a{
+    text-decoration:none;
+    color: #fff;
+    text-transform: uppercase;
+}
+#link button{
+    
+    background-color: gray;
+    border: double red;
+    box-shadow: 7px 7px 10px 0 #000;
+}
+/*para usar animações é precisa criar ela como se fosse uma propriedade css dando um nome a ela e chamando onde ela deve aparecer*/
+/*dependendo do navegador e sua versão é necessário usar prefixos*/
+@-webkit-keyframes animacao-caixa{
+    from{/*estado inicial*/
+    background: red;
+    }
+    to{/*estado final*/
+    background: blue;
+    }
+}
+@-moz-keyframes animacao-caixa{
+    from{/*estado inicial*/
+    background: red;
+    }
+    to{/*estado final*/
+    background: blue;
+    }
+}
+@-o-keyframes animacao-caixa{
+    from{/*estado inicial*/
+    background: red;
+    }
+    to{/*estado final*/
+    background: blue;
+    }
+}
+@keyframes animacao-caixa{
+    from{/*estado inicial*/
+    background: red;
+    border-radius: 0px;
+    top: 0;
+    left:0;
+    }
+    to{/*estado final*/
+    background: blue;
+    border-radius: 300px;
+    top: 200px;
+    left:200px;
+    }
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative; /*assim a caixa irá se movimentar*/
+    animation-duration: 5s;/*nessa animação é preciso colocar um tempo paraa ela terminar*/
+    animation-delay: 3s;/*delay para a animação começar*/
+    animation-iteration-count: 2;/*define quantas vezes é executada*/
+    animation-direction: alternate;/*faz a animação quando chegar no final reverter ao estado original de forma animada*/
+
+    /*É possível definir a animação com todas propriedades em uma única linha colocando seus valores nessa ordem
+
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+    Como adicionar os prefixos para cada propriedade seria muito demorado, é mais facíl colocar as propriedades em uma única linha
+    para cada prefixo*/
+    -moz-animation: animacao-caixa 5s 3s 2 alternate;
+    -webkit-animation: animacao-caixa 5s 3s 2 alternate;
+    -o-animation: animacao-caixa 5s 3s 2 alternate;
+    animation: animacao-caixa 5s 3s 2 alternate;
+}
