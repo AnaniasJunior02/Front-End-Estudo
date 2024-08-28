@@ -32,6 +32,11 @@ aside{
     height:300px;
 }
 
+form{
+    background: #ccc;
+    clear: both; 
+}
+
 footer{
     background:rgb(232, 68, 68);
     clear: both;

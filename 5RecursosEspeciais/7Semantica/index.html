@@ -64,6 +64,67 @@
         </p>
     </aside>
 
+    <form><!--Novos inputs e atributos HTML 5-->
+        
+        <!--EMAIL: agora temos o tipo email onde ao digitar o email incorretamente a mensagem é exibida.
+
+        REQUIRED: além disso temos o atributo required que obriga o usúario a digitar no campo.
+
+        AUTOFOCUS: o atributo autofocus faz com que o campo seja automáticamente selecionado assim que a página carrega.
+
+        NUMBER: o tipo number permite adicionar números e filtar o texto somente deixando digitar carácteres hexadecimais,
+        também é possível definir um limite minimo ou maximo para os números e quando se passa do limite uma mensagem aparece.
+        além disso o atributo STEP faz os números pularem a medida em que o botão é apertado com base no valor que ele tiver
+        
+        URL: o type url filtra para que o usúario coloque uma url corretamente e é até uma boa idéia adicionar um exemplo como placeholder
+
+        PESQUISA: o type search é usado em pesquisas e ao digitar apareceum X para que limpe a caixa
+
+        RANGE: range é um tipo que cria um marcador que pode ser movimentado para esquerda o direita(dependendo do naegador ele não aparece)
+        nele é possível definir um número mínimo e máximo. com VALUE é possível definir um valor inicial
+
+        DATA: date é um input que cria um campo para datas com diversas funcionalidades como calêndário(muito usado mas é normal cria-lo em javascript)
+
+        COLOR: usado para configurar cor de perfil, fundo ou outras configurações no site(também normalmente criado no javascript)
+
+        TODOS INPUTS ATUALMENTE SÃO MUITO NOVOS ENTÃO DIVERSOS NAVEGADORES NÃO POSSUEM SUPORTE E É SEMPRE RECOMENDADO VERIFICAR
+        -->
+
+        <label for="nome">nome</label>
+        <input type="text" id="nome" required autofocus>
+        <br><br>
+
+        <label for="email">email</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="numero">Número</label>
+        <input type="number" id="numero" min="1" max="20" step="2">
+        <br><br>
+
+        <label for="url">URL</label>
+        <input type="url" id="url" placeholder="ex: http://">
+        <br><br>
+
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" id="pesquisa">
+        <br><br>
+
+        <label for="range">Range</label>
+        <input type="range" id="range" min="1" max="20" value="10">
+        <br><br>
+
+        <label for="data">Data</label>
+        <input type="date" id="date">
+        <br><br>
+
+        <label for="color">Cor</label>
+        <input type="color" id="color">
+        <br><br>        
+
+        <input type="submit" name="" value="Enviar">
+    </form>
+
     <footer><!--rodapé-->
         <p>&copy; 2024 - Nova Semântica</p>
     </footer>
