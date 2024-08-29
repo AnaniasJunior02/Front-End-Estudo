@@ -1,0 +1,37 @@
+#conteudo{
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+
+    /* estas seriam os atributos utilizados no flex direction
+    row | row-reverse | column | column-reverse
+    row alinha os itens horizontalmente e column verticalmente, reverse joga os itens para a direita*/
+    flex-direction: row;
+
+    /*nowrap | wrap | wrap-reverse
+    nowrap define que ao o container se tornar menor os itens não irão quebrar a linha e ficar um abaixo do outro.
+    wrap quebra a linha para os itens que não cabem no container e caso o container não possua largura, na medida
+    que a página for fechando eles irão se ajustar.
+    wrap-reverse faz a mesma coisa jogando os itens para baixo*/
+    flex-wrap: wrap-nowrap;
+
+    /*flex-start | flex-end | center | space-between | space-arround
+    flex-start irá alinhar os itens no canto superior esquerdo
+    flex-end irá alinhar os itens no canto superior direito
+    center irá alinhar os itens em cima e no meio
+    space-between adiciona um espaçamento aos itens deixando os itens das estremidades colados nos cantos
+    space-arround adiciona um espaçamento aos itens deixando os itens com espaçamento igual
+    justify-content irá alinhar os itens em forma horizontal*/
+    justify-content: space-arround;
+
+    /*strech | center | flex-start | flex-end | baseline
+    strech fará os itens preencherem sua área até completar sua altura.
+    */
+    justify-items: center;
+}
+
+.item{
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+}
