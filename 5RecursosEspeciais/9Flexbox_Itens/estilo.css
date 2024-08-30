@@ -1,0 +1,52 @@
+/*flexbox possuí compatibilidade com praticamente todos navegadores com excessão do internet explorer em suas versões antigas
+além disso é recomendado utilizar prefixos*/
+
+#conteudo {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+}
+
+.item {
+    height: 200px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+
+    /*flex-grow(em inglês seria algo como aumentar ou crescer)Define a proporção de espaço ocupado por um item, fazendo o item preencher toda área de conteúdo.
+    se mais de um item for selecionado ele irá dividir o espaço por igual a não ser que seu número seja maior fazendo com que o
+    espaço do item seja maior.*/
+    flex-grow: 1;
+
+    /*flex-shrink(em inglês seria algo como encolher) Define a capacidade de redução de tamanho do item.
+    então a medida que a tela vai sendo diminuída ele define o quanto um item irá encolher mais que os outros*/
+    flex-shrink:1;
+
+    /*Flex-basis indica o tamanho inicial do flex itens antes da distribuição do espaço restante. fazendo com que
+    os espaçamentos sejam proporcionais a seu valor*/
+    flex-basis: 200px;
+}
+
+/*por padrão o valor de order é 0 e com ele é possível selecionar a ordem dos itens da seguinte forma, além disso
+é possível usar valores negativos também*/
+
+
+.ordem1 {
+    order: 1;
+    flex-shrink: 2;
+}
+
+.ordem2 {
+    order: 2;
+    flex-grow: 2;
+}
+
+.ordem3 {
+    order: 3;
+    flex-grow: 3;/*como todos os itens estão selecionados com 1, este item será maior*/
+    flex-shrink: 5;
+}
+
+.ordem4 {
+    order: 4;
+}
