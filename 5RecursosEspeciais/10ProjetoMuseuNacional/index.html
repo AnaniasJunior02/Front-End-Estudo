@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Museu Nacional</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="stylesheet" type="text/css" href="../1NormalizeCss/normalize.css">
-    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="estilo.css">    <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 </head>
@@ -33,6 +32,56 @@
             </nav><!--fim nav-->
         
         </header><!--fim header-->
+
+        <div id="principal"><!--incio principal-->
+
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="../Imagens/museu.png">
+                </section>
+            </div>
+
+            <aside>
+                <section id="depoimento">
+                    <img src="../Imagens/depoimento.png">
+                </section>
+
+                <section id="visita"><!--inicio visita-->
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+
+                            <label for="data">Data</label>
+                            <input class="campo" type="text" id="data" value="dd/mm/aa">
+
+                            <label class="campo" for="qtd">Qtd pessoas</label>
+                            <input type="text" style="width: 30px;" id="qtd" value="1">
+                        </fieldset>
+
+                    <input class="botao" type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section><!--fim visita-->
+
+                <section id="galeria">
+                    <h4>Galeria de fotos</h4>
+                    <a href="">
+                        <img src="../Imagens/imagem1.jpg" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="../Imagens/imagem2.jpg" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="../Imagens/imagem3.jpg" height="93" width="93">
+                    </a>
+                    <a href="">
+                        <img src="../Imagens/imagem4.jpg" height="93" width="93">
+                    </a>
+                </section>
+
+            </aside>
+
+        </div><!--fim principal-->
 
     </div><!--fim container-->
 
