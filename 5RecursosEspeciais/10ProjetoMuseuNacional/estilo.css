@@ -63,10 +63,10 @@ nav ul li a:hover{
 /* Principal
 ********************************************************************************************************/
 
-#conteudo{
-    background: green; 
+#conteudo{ 
     width:710px;
     float: left;
+    margin-bottom: 20px;
 }
 
 aside{
@@ -74,6 +74,7 @@ aside{
     width: 350px;
     float: right; 
     padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 section#visita{
@@ -89,14 +90,43 @@ section#galeria{
 section#galeria a{
     display: block;
     background: url(../Imagens/fundo-foto.png) no-repeat;
-    border: 1px solid red;
     float: left;
     padding: 17px;
     margin: 10px 0 0 20px;
 }
+article#video{
+   float: left;
+   width: 310px; 
+   margin-left: 25px;
+}
+
+article#mapa{
+    float: left;
+    width: 310px; 
+    margin-left: 37px;
+ }
+
+ article#exposicao{
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 25px;
+ }
+
+ article#historia{
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 37px;
+ }
 
 section#galeria img{
     margin-top: 3px;
+}
+
+h3{
+    color: #227115;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 h4{
@@ -129,10 +159,28 @@ input.botao{
     font-size: 1.2em;
 }
 
+input.botao:hover{
+    background: white;
+    color: #9b9271;
+}
+
 fieldset{
     border: none;
 }
 
 legend{
     display: none;
+}
+
+/* Rodapé
+********************************************************************************************************/
+footer{
+    clear: both; /*clear both causa margin colapse então foi colocado um margin-bottom no aside e conteúdo*/
+    padding:20px 0 30px 0;
+    text-align: center;
+    background: url(../Imagens/fundo-rodape.png) no-repeat center top;
+}
+
+footer>p a{
+    padding: 2px 10px;
 }
