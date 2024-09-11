@@ -18,25 +18,72 @@
 
     <!-- Navegação
     Tipos de navegação:
-        nav-pills
-        nav-tabs
+        nav-pills (aplica um arredondamento)
+        nav-tabs (adiciona uma borda  sobre o botão e uma linha abaixo)
+        ambos precisam que a classe active seja usada
     opções de alinhamento: 
         justify-content-center 
         justify-content-end
         flex-column
     -->
     <h2>Navegação simples / abas</h2>
-<ul class="nav">
-    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-</ul>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Serviços</a>
+        </li>
+    </ul>
+
 
     <h2>Barra de navegação simples</h2>
-
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- navbar-dark deixa o texto claro para ser usado em backgrounds escuros -->
+        <a class="navbar-brand" href="">Chalé Hotel</a> <!--navbar-brand é usado para formatação de logo-->
+        <ul class="navbar-nav ms-auto"><!--navbar-nav irá deixar os itens na horizontal-->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Serviços</a>
+            </li>
+        </ul>
+    </nav>
 
     <h2>Barra de navegação com menu responsivo</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--LOGO-->
+        <!-- navbar-dark deixa o texto claro para ser usado em backgrounds escuros -->
+        <a class="navbar-brand" href="">Chalé Hotel</a> <!--navbar-brand é usado para formatação de logo-->
 
+        <!--MENU HAMBURGUER-->
+
+        <button class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--MENU-->
+        <div class="collapse">
+            <ul class="navbar-nav ms-auto "><!--navbar-nav irá deixar os itens na horizontal-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Serviços</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
     <h2>Barra de navegação com formulário</h2>
