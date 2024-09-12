@@ -65,12 +65,12 @@
 
         <!--MENU HAMBURGUER-->
 
-        <button class="navbar-toggler">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!--MENU-->
-        <div class="collapse">
+        <!--NAVEGAÇÃO-->
+        <div class="collapse navbar-collapse" id="navegacao">
             <ul class="navbar-nav ms-auto "><!--navbar-nav irá deixar os itens na horizontal-->
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
@@ -87,10 +87,81 @@
 
 
     <h2>Barra de navegação com formulário</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--LOGO-->
+        <!-- navbar-dark deixa o texto claro para ser usado em backgrounds escuros -->
+        <a class="navbar-brand" href="">Chalé Hotel</a> <!--navbar-brand é usado para formatação de logo-->
+
+        <!--MENU HAMBURGUER-->
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVEGAÇÃO-->
+        <div class="collapse navbar-collapse" id="navegacao2">
+            <ul class="navbar-nav ms-auto "><!--navbar-nav irá deixar os itens na horizontal-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Serviços</a>
+                </li>
+            </ul>
+
+            <!--FORMULÁRIO-->
+            <form class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="pesquisar">
+                <button class="btn btn-outline-success">ok</button>
+            </form>
+
+        </div>
+    </nav>
 
 
 
     <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--LOGO-->
+        <!-- navbar-dark deixa o texto claro para ser usado em backgrounds escuros -->
+        <a class="navbar-brand" href="">Chalé Hotel</a> <!--navbar-brand é usado para formatação de logo-->
+
+        <!--MENU HAMBURGUER-->
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVEGAÇÃO-->
+        <div class="collapse navbar-collapse" id="navegacao2">
+            <ul class="navbar-nav ms-auto "><!--navbar-nav irá deixar os itens na horizontal-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Serviço 1</a>
+                        <a href="#" class="dropdown-item">Serviço 2</a>
+                        <a href="#" class="dropdown-item">Serviço 3</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!--FORMULÁRIO-->
+            <form class="d-flex">
+                <input type="text" class="form-control me-2" placeholder="pesquisar">
+                <button class="btn btn-outline-success">ok</button>
+            </form>
+
+        </div>
+    </nav>
 
 
     <!--Cores
@@ -98,18 +169,83 @@
     bg-warning, bg-danger, bg-light, bg-dark
     -->
     <h2>Cores</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <!-- navbar-dark deixa o texto claro para ser usado em backgrounds escuros -->
+        <a class="navbar-brand" href="">Chalé Hotel</a> <!--navbar-brand é usado para formatação de logo-->
+        <ul class="navbar-nav ms-auto"><!--navbar-nav irá deixar os itens na horizontal-->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Serviços</a>
+            </li>
+        </ul>
+    </nav>
 
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
 
     <!--Alinhamentos
     opções: fixed-top, fixed-bottom, sticky
     -->
     <h2>Alinhamentos</h2>
-
+    <nav class="navbar sticky-bottom navbar-expand-sm navbar-dark bg-danger">
+        <!-- navbar-dark deixa o texto claro para ser usado em backgrounds escuros -->
+        <a class="navbar-brand" href="">Chalé Hotel</a> <!--navbar-brand é usado para formatação de logo-->
+        <ul class="navbar-nav ms-auto"><!--navbar-nav irá deixar os itens na horizontal-->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Serviços</a>
+            </li>
+        </ul>
+    </nav>
 
     <h1>Lorem ipsum dolor sit amet</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
         erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
-        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis
+        quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.
+    </p>
 
 
     <!-- Optional JavaScript -->
