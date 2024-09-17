@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Bootstrap - Configurações do grid</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style type="text/css">
+        .marcador {
+            background: #fe9d9d;
+            border: 1px solid #f94646;
+        }
+
+        .marcador-container {
+            background: #5bf946;
+            border: 1px solid #36ae26;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container marcador-container">
+
+        <h2>Largura fixa</h2>
+        
+        <div class="row">
+            <div class="marcador col">área 1</div>
+            <div class="marcador col">área 2</div>
+            <div class="marcador col">área 3</div>
+            <div class="marcador col">área 4</div>
+        </div>
+
+        <h2>Largura automática (auto-layout)</h2>
+
+        <div class="row">
+            <div class="marcador col">área 1</div><!--nesta situação a classe vai ficar com o tamanho que sobrar do grid, o que seria 2-->
+            <div class="marcador col-4">área 2</div>
+            <div class="marcador col-6">área 3</div>
+        </div>
+
+        <h2>Largura igual empilhada</h2>
+
+        <div class="row">
+            <!--é possível definir em qual tamanho de tela você quer que os itens se tornem responsivos e fiquem um ao lado do outro-->
+            <div class="marcador col-md">área 1</div>
+            <div class="marcador col-md">área 2</div>
+            <div class="marcador col-md">área 3</div>
+        </div>
+
+        <h2>Ordenando</h2>
+
+        <div class="row">
+            <!--é possível alterar a ordem de exibição atravéz do atributo order-->
+            <div class="marcador col-md-4 order-3">área 1</div>
+            <div class="marcador col-md-4 order-2">área 2</div>
+            <div class="marcador col-md-4 order-1">área 3</div>
+        </div>
+
+        <h2>offset</h2>
+        <!--é possível fazer com qie o conteúdo pule espaços no grid, neste exmplo ele foi mais centralizado ao invés de ficar no canto-->
+        <div class="row">
+            <div class="marcador col-sm-4 offset-sm-4">Login...</div>
+        </div>
+
+        <h2>offset múltiplos alinhamentos</h2>
+
+        <div class="row">
+            <div class="marcador col-sm-3 offset-sm-3">Conteúdo 1</div>
+            <div class="marcador col-sm-3 offset-sm-3">Conteúdo 2</div>
+
+        </div>
+
+        <h2>Aninhamento</h2>
+        <!--é possível adicionar uma dentro de outra criando as colunas do grid com base no tamanho da que está mais acima na hierarquia-->
+        <div class="row">
+            <div class="col-sm-6" style="border: 1px solid blue">
+                col-sm-6
+                <div class="row">
+                    <div class="marcador col-sm-6">conteúdo 1</div>
+                    <div class="marcador col-sm-6">conteúdo 2</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
