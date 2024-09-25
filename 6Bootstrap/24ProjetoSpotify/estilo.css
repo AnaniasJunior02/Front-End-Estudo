@@ -3,6 +3,7 @@ html,
 body,
 #home {
     height: 100%;
+    overflow-x: hidden; /* para a barra de rolagem horizontal não aparecer*/
 }
 
 body {
@@ -67,12 +68,52 @@ nav.navbar-transparente {
 .btn-branco:hover{
     background-color: white;
 }
+
+/*Estrutura Conteúdos*/
+.caixa{
+        padding: 20px 0;
+}
+#servicos{
+    background: white;
+}
+#servicos h2, h3{
+    color: #7c25f8;
+}
+#recursos{
+    color: white;
+}
+#recursos h2{
+    color: white;
+}
+#recursos h3{
+    color: #9bf0e1;
+}
+.albuns{
+    padding: 10px 0;
+}
+.rotacionar{
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
 /*Tipografia*/
 h1 {
     font-weight: 900;
     letter-spacing: -0.05;
     margin-bottom: 50px;
     color: white;
+}
+h2{
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
 }
 
 /*Extra Small devices (portrait phones)*/
