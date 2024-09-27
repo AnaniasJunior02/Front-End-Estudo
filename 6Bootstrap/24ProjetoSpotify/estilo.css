@@ -73,7 +73,10 @@ nav.navbar-transparente {
 .btn-branco:hover {
     background-color: white;
 }
-
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+    text-decoration: none;
+}
 /*Estrutura Conteúdos*/
 .caixa {
     padding: 20px 0;
