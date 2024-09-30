@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casting toString, parseInt e parseFloat</title>
+</head>
+<body>
+    <script>
+        var notaProva1 = prompt(`Digite a nota de sua primeira prova:`);
+        var notaProva2 = prompt(`Digite a nota de sua segunda prova:`);
+
+        /*o comando prompt transforma o que for digitado em string então para fazer a média das notas
+        é preciso fazer o casting de string para float da seguinte forma*/
+
+        notaProva1 = parseFloat(notaProva1);
+        notaProva2 = parseFloat(notaProva2);
+
+        var notaBimestre = (notaProva1 + notaProva2) / 2;
+
+        if(notaBimestre <= 6){
+            document.write(`Aprovado com a nota de ${notaBimestre}`);
+        }else{
+            document.write(`Reprovado com a nota de ${notaBimestre}`);
+        }
+
+        //é possível transformar numeros em strings também da seguinte forma:
+        var numero1 = 20;
+        var numero2 = 24;
+
+        document.write(`o ano atual é de ${numero1.toString() + numero2.toString()}`);
+    </script>
+</body>
+</html>

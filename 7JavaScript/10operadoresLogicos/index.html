@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        /*OPERADORES LÓGICOS
+        E (&&) - verdadeiro se todas expressões forem verdadeiras
+        OU (||) - verdadeiro se pelo menos uma das expressões for verdadeira
+        NEGAÇÃO (!) - inverte o resultado da expressão de comparação
+
+        EXEMPLO:*/
+
+        if(2 == 2 && 3 >= 1){
+            document.write("verdadeiro<br/>")
+        }
+        if(2 == 2 || 3 >=1 ){
+            document.write("uma das expressões é verdadeira<br/>")
+        }
+        if(!(2 == 3)){
+            document.write("mesmo sendo falso inverteu o resultado se tornando verdadeiro<br/>")
+        }
+        //EXEMPLO PRÁTICO
+
+        var nota = prompt("digite a nota do aluno:");
+        var faltas = prompt("digite a quantidade de faltas do aluno:");
+
+        var media = 7;
+        var faltasMaximas = 15;
+
+        if(nota >= media && faltas <= faltasMaximas){
+            document.write("Aprovado");
+        }else{
+            document.write("Reprovado");
+        }
+        
+    </script>
+</body>
+</html>

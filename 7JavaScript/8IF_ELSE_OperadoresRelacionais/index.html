@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e Else e Operadores de Comparação</title>
+</head>
+<body>
+    <script>
+
+
+        /*if e else são usados em uma estrutura de controle que nos possíbilidade em determinadas condições escolher o fluxo que uma aplicação
+        vai tomar*/
+
+        /*EXEMPLO DE UMA ESTRUTURA COM IF E ELSE:
+
+
+        if(condicao){
+            //trecho do código que será executado
+        
+        }else if(outra-condicao){
+            //trecho de código que será executado
+
+        }else{
+            //trecho do código que será executado
+        }
+            */
+
+        /*No Javascript temos 8 operadores de comparação(relacionais) que podem ser usados dentro de uma estrutura if e else
+        seriam eles:
+        igual(==) - verifica se os valores comparados são IGUAIS
+        Idêntico (===) - verifica se os valores comparados são IGUAIS E DO MESMO TIPO
+        Diferente (!=) - verifica se os valores comparados são DIFERENTES
+        Não idêntico (!==) - verifica se os valores comparados são DIFERENTES E DE TIPOS DIFERENTES 
+        Menor (<) - verifica se o valor da esquerda é MENOR que o valor da direita
+        Maior (>) - verifica se o valor da esquerda é MAIOR que o valor da direita
+        Menor ou igual (<=) - verifica se o valor da esquerda é MENOR OU IGUAL que o valor da direita
+        Maior ou igual (>=) - verifica se o valor da esquerda é MAIOR OU IGUAL que o valor da direita
+
+        EXEMPLO:
+        */
+        var igual = 2 == 2;
+        var diferente = 3 != 1;
+        var identico = 2 === "2";
+        var menor = 10 < 1;
+
+        if(igual){
+            document.write(`a condição de 2 == 2 é verdadeira <br/>`);
+        }else{
+            document.write(` a condição de 2 == 2 é falsa <br/>`);
+        }
+
+        if(diferente){
+            document.write(`a condição de 3 != 1 é verdadeira <br/>`);
+        }else{
+            document.write(`a condição de 3 != 1 é falsa <br/>`);
+        }
+
+        if(identico){
+            document.write(`a condição de 2 === "2" é verdadeira <br/>`);
+        }else{
+            document.write(`a condição de 2 === "2" é falsa <br/>`);
+        }
+
+        if(menor){
+            document.write(`a condição de 10 < 1 é verdadeira <br/>`);
+        }else{
+            document.write(`a condição de 10 < 1" é falsa <br/>`);
+        }
+
+        /*Exemplo prático*************************************************************************************************/
+        var notaPrimeiroBimestre = 5;
+        var notaSegundoBimestre = 7;
+        var notaTerceiroBimestre = 6;
+        var notaQuartoBimestre = 10;
+        var notaFinal = (notaPrimeiroBimestre + notaSegundoBimestre + notaTerceiroBimestre + notaQuartoBimestre) / 4;
+
+        if(notaFinal <6){
+            document.write(`O aluno foi reprovado com a nota de ${notaFinal}`)
+        }else{
+            document.write(`O aluno foi aprovado com a nota de ${notaFinal}`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+
+<body>
+    <script>
+        /*
+        a limitação do operador ternário é não permitir que coloquemos um bloco lógico que faça algo mais complexo
+        SINTAXE DE UM OPERADOR TERNÁRIO:
+        var resultado = <condicao> ? <verdadeiro> : <falso>;
+
+        EXEMPLO:*/
+        var nota = prompt("digite a nota do aluno:");
+        var faltas = prompt("digite a quantidade de faltas do aluno:");
+
+        var media = 7;
+        var faltasMaximas = 15;
+
+        var resultado = nota >= media && faltas <= faltasMaximas ? "Aprovado" : "Reprovado";
+        document.write(resultado)
+    </script>
+</body>
+
+</html>
