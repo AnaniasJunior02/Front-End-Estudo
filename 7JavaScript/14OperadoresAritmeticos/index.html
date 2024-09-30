@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        Operadores:
+        Adição (+) - Soma Valores e concatena textos
+        Subtração (-) - Diferença entre valores
+        Multplicação (*) - Produto dos valores
+        Divisão (/) - Quociente dos valores
+        Módulo (%) - Resto existente em uma divisão
+        Incremento (++) - Pré/incremento
+        Decremento (--) - Pré/decremento
+        */
+
+        var n1 = 9;
+        var n2 = 2;
+        
+        //Adição
+        document.write("A soma entre " + n1 + " e " + n2 + " é: " + (n1 + n2) + "<br/>");
+        /*nesta situação foi necessário colocar o parenteses para adicionar uma ordem de
+        precedência pois o + estava concatenando por possuir um texto*/
+
+        //Subtração
+        document.write(`A subtração entre ${n1} e ${n2} é igual a ${n1 - n2}<br/>`)
+        //Multiplicação
+        document.write(`A multiplicação entre ${n1} e ${n2} é igual a ${n1 * n2}<br/>`)
+        //Divisão
+        document.write(`A divisão entre ${n1} e ${n2} é igual a ${n1 / n2}<br/>`)
+        //Módulo
+        document.write(`O resto da divisão entre ${n1} e ${n2} é igual a ${n1 % n2}<br/>`)
+
+        //Incremento
+        document.write(`Ao incrementar ${n1} seu valor se tornou ${++n1} e ao usar o pós incremento ${n1++} ele só irá aumentar na próxima instrução ${n1}<br/>`)
+        //Decremento
+        document.write(`Ao decrementar ${n2} seu valor se tornou ${--n2}e ao usar o pós decremento ${n2--} ele só irá diminuir na próxima instrução ${n2}<br/>`)
+
+
+    </script>
+</body>
+
+</html>
