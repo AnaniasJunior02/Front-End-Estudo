@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+
+<body>
+    <script>
+        /*as variáveis no javascript estão divididas em três escopos:
+        GLOBAL, FUNÇÃO E BLOCO*/
+
+        //Escopo Global
+        var serie = "One Piece"//escopo global pode ser acessado pelo escopo de função e bloco
+        document.write(`global ${serie} <br/>`)
+        
+
+        //Escopo de bloco
+        if(true){
+            var serie2 = "Game of Thrones"//escopo de bloco pode ser acessado pelo escopo global e função
+            document.write(` bloco ${serie} <br/>`) 
+            document.write(`bloco ${serie2} <br/>`)
+        }
+        document.write(`global ${serie2} <br/>`)
+
+        //Escopo função
+        function x(){
+            var serie3 = "Bleach"
+            document.write(`função ${serie} <br/>`)
+            document.write(`função ${serie2} <br/>`)
+            document.write(`função ${serie3} <br/>`)
+        }
+        x();
+        //nesta situação o escopo da função não poderá ser acessada
+        document.write(`global ${serie3} <br/>`)
+        if(true){
+            document.write(`função ${serie3} <br/>`)
+        }
+
+        /*escopo de função e bloco visualizam escopos globais
+        variáveis declaradas em escopo de bloco sofrem elevação e podem ser acessadas pelo escopo global e função
+        variáveis declaradas no escopo função não sofrem elevação e não podem serem usadas de fora da função, somente redeclaradas*/
+    </script>
+</body>
+
+</html>

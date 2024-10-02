@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precedência Aritmética</title>
+    <title>Atividade Calculo IMC</title>
 </head>
 
 <body>
@@ -34,6 +34,24 @@
         “<Nome> possui índice de massa corporal igual a <m>, sendo classificado como: 
         <classificacao>.”
         */
+
+        var nome = prompt("Qual é seu nome: ");
+        var alturaCm = parseFloat(prompt("qual é sua altura em cm: "));
+        var peso = parseFloat(prompt("qual é seu peso: "));
+        
+        alturaM = alturaCm / 100;
+        m = peso / (alturaM ** 2);
+
+        var classificacao = (m < 16) ? "Baixo peso muito grave" :
+        (m >= 16 && m <= 16.99) ? "Baixo peso Grave" :
+        (m >= 17 && m <= 18.49) ? "Baixo peso" :
+        (m >= 18.50 && m <= 24.99) ? "Peso Normal" :
+        (m >= 25 && m <= 29.99) ? "Sobrepeso" :
+        (m >= 30 && m <= 34.99) ? "Obessidade grau 1" :
+        (m >= 35 && m <= 39.99) ? "Obessidade grau 2" :
+        (m >= 40) ? "Obessidade grau 3" : "Valor invalido";
+
+        document.write(`${nome} possuí o ídince de massa corporal igual a ${m.toFixed(2)}, sendo classificado como ${classificacao}.`);
     </script>
 </body>
 

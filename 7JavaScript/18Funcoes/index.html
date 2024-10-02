@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+
+<body>
+    <script>
+
+        /*funções podem ser de dois tipos: void(vazio) onde ela somete irá processar o código ou com retorno no qual vai retornar alguma coisa
+        a função pode ter ou não ter argumentos e parâmetros que são basicamente as variáveis usadas dentro dela.
+        para a função ser utilizada ela precisa ser chamada em algum lugar do script
+        ECEMPLO DE UMA FUNÇÂO*/
+
+        function calcularAreaTerreno(largura, comprimento/*parâmetros*/){
+            //lógica
+            var area = largura * comprimento;
+            return /*o que desejo retornar*/area;
+        }
+
+        var largura = prompt("Qual é a largura do terreno: ");//os valores são strings porém o javascript na função reconhece os valores numéricos para fazer a soma
+        var comprimento = prompt("Qual é o comprimento do terreno: ");
+
+        var area = calcularAreaTerreno(largura, comprimento);
+
+        document.write(`O terreno possuí uma área de ${area} metros quadrados`);
+
+        function soma(a, b){
+            return a + b;
+        }
+
+        console.log(soma(7, 7));
+        console.log(soma(7,7,9,15));//como a função possuí somente dois parâmetros e temos 4, o javascript irá ignorar os demais
+        console.log(soma(7)); //nesta situação o javascript irá somar 7 + undefined o que resultará em not a number. é possível criar um tratamento para essa situação
+        console.log(soma()) //nesta situação também iria resultar em not a number NaN
+    </script>
+</body>
+
+</html>

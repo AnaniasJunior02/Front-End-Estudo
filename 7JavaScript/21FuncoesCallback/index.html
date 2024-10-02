@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções CallBack</title>
+</head>
+
+<body>
+    <script>
+
+    /*funções callback são muito utilizadas para definir um tratamento de erro.
+    sua funcionalidade se consiste em definir uma lógica de sucesso para o retorno de alguma coisa e definir
+    funcionalidades para caso algo de errado ou o retorno não saia como o esperado*/
+    
+        function exibirArtigo(id, cllBackSucesso, callBackErro){
+            //lógica: recuperar id via requisição http
+            if(true){
+                callBackSucesso("Funções de callback em JS"," Funções de callback são muito utilizadas...");
+            }else{
+                callBackErro("Erro ao recuperar dados");
+            }
+        }
+
+        var callBackSucesso = function(titulo, descricao){
+            document.write(`<h1>${titulo} </h1><hr/>`);
+            document.write(`<p>${descricao} </p>`);
+        }
+        var callBackErro = function(erro){
+            document.write(`<p><b>Erro:</b> ${erro}</p>`);
+        }
+        exibirArtigo(1,callBackSucesso, callBackErro);
+    </script>
+</body>
+
+</html>
