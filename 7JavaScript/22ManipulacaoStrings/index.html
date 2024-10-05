@@ -9,6 +9,32 @@
 
 <body>
     <script>
+        var nome = `Jorge Sant Ana`
+        var nome2 = `R i c h a r d`
+
+        //propriedade length que mostra o número de caractéres começando pelo 0
+        document.write(nome.length, `<br/>`)
+
+        //método charAt para mostrar o caráctere correspondente ao número escolhido
+        document.write(nome.charAt(12), `<br/>`)
+
+        // mostra a primeira ocorrência na cadeia de carácteres e caso a ocorrência não exista o retorno será -1
+        document.write(nome.indexOf(`g`), `<br/>`)
+
+        //substituí o valor procurado pelo que colocar 
+        document.write(nome.replace(`Sant Ana`, `Silva`), `<br/>`)
+
+        //a partir da posição que escolher será retornado o número de carácteres que escolher em seguida
+        document.write(nome.substr(6,4), `<br/>`)
+
+        //passa o valor para caixa baixa
+        document.write(nome.toLowerCase(), `<br/>`)
+
+        //passa o valor para caixa alta
+        document.write(nome.toUpperCase(), `<br/>`)
+
+        //remove todos espaços nas extremidades dos caracteres
+        document.write(nome2.trim())
     </script>
 </body>
 
